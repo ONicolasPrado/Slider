@@ -1,12 +1,12 @@
 let btnNext = document.querySelector('.next')
-let bntBack = document.querySelector('.back')
+let btnBack = document.querySelector('.back')
 
 let container = document.querySelector('.container')
 let list = document.querySelector('.container .list')
 let thumb = document.querySelector('.container .thumb')
 
-btnNext.onClick = () => moveItemsOnClick('next')
-bntBack.onClick = () => moveItemsOnClick('back')
+btnNext.onclick = () => moveItemsOnClick('next')
+btnBack.onclick = () => moveItemsOnClick('back')
 
 function moveItemsOnClick(type) {
     let listItems = document.querySelectorAll('.list .list-item')
@@ -29,5 +29,4 @@ function moveItemsOnClick(type) {
         container.classList.remove('next')
         container.classList.remove('back')
     }, 1000);
-
 }
