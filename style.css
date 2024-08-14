@@ -159,3 +159,27 @@ header a {
   transition: 0.7s;
 
 }
+
+/* movimento da Thumb */
+
+.container.next .thumb {
+  animation: effectNextThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectNextThumb {
+  from {
+    transform: translateX(150px);
+
+  }  
+}
+
+.container.next .thumb .thumb-item:nth-last-child(1){
+  animation: effectLastThumb 0.5 linear 1 forwards;
+}
+
+@keyframes effectLastThumb {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
