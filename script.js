@@ -8,15 +8,11 @@ let thumb = document.querySelector(".container .thumb");
 btnNext.onclick = () => moveItemsOnClick("next");
 btnBack.onclick = () => moveItemsOnClick("back");
 
-<<<<<<< HEAD
-function moveItemsOnClick(type) {
-  let listItems = document.querySelectorAll(".list .list-item");
-  let thumbItems = document.querySelectorAll(".thumb .thumb-item");
-=======
+
 function moveItemsOnClick(type){
     let listItems = document.querySelectorAll('.list .list-item')
     let thumbItems = document.querySelectorAll('.thumb .thumb-item')
->>>>>>> 9e422bba60263a6103bf8f0c114870485d6653c4
+
 
   if (type === "next") {
     list.appendChild(listItems[0]);
@@ -31,5 +27,5 @@ function moveItemsOnClick(type){
   setTimeout( () => {
     container.classList.remove("next");
     container.classList.remove("back");
-  }, 1000);
+  }, 500);
 }
